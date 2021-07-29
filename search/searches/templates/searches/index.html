@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SearchZIL</title>
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link
+      href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>SearchZIL</h1>
+    </div>
+    <div id="divBusca">
+      <img class="searchImg" src="{% static "images/search.png" %}"
+      alt="Search!" />
+      <input type="text" id="txtBusca" placeholder="Buscar..." />
+      <button id="btnBusca">Buscar</button>
+    </div>
+    <!-- <div class="list">
+      <div class="list">
+        {% for image in urls %}
+        <container class="list-container">
+          <img class="content" src="static/{{image}}" alt="" />
+          {% endfor %}{% for content in title %}
+          <h4 class="text-image">{{ content }}</h4>
+          {% endfor %}
+        </container>
+      </div> -->
+    <div class="list">
+      <a href=""
+        ><figure class="border">
+          <img class="content" src="{% static "images/carnaval.jpg" %}" alt=""
+          />
+          <figcaption class="text-fig">Carnaval no Brasil</figcaption>
+        </figure></a
+      >
+      <a href=""
+        ><figure class="border">
+          <img class="content" src="{% static "images/futebol.jpeg" %}" alt="" />
+        <figcaption class="text-fig">Futebol no Brasil</figcaption>
+        </figure></a
+      >
+      <a href=""
+        ><figure class="border">
+          <img class="content" src="{% static "images/samba.jpg" %}" alt="" />
+        <figcaption class="text-fig">Samba no Brasil</figcaption>
+        </figure></a
+      >
+    </div>
+  </body>
+</html>
