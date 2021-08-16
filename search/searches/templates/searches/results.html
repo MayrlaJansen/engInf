@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SearchZIL</title>
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link
+      href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>SearchZIL</h1>
+    </div>
+    <div class="topo">
+      <div><a class="btn-return" href="/">Voltar</a></div>
+      <div class="title"><h2>Resultados da busca</h2></div>
+    </div>
+    {% if context %}
+    <div class="results">
+      {% for text in context %}
+      <div class="card">
+        <p>{{text}}</p>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="error">Não existe resultado para a busca solicitada.</p>
+    {% endif %}
+  </body>
+</html>

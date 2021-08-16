@@ -1,7 +1,7 @@
 h1 {
   color: #fff;
-  margin-left: 40%;
-  font-family: 'Lobster';
+  text-align: center;
+  font-family: "Lobster";
   font-size: 50px;
 }
 .navbar {
@@ -16,7 +16,7 @@ h1 {
 }
 #divBusca {
   background-color: #ffff;
-  border: solid 2px #1E90FF;
+  border: solid 2px #1e90ff;
   border-radius: 10px;
   width: 600px;
   height: 40px;
@@ -35,11 +35,13 @@ h1 {
   width: 100%;
   margin-top: 2px;
 }
-textarea:focus, input:focus, select:focus {
+textarea:focus,
+input:focus,
+select:focus {
   box-shadow: 0 0 0 0;
   border: 0 none;
   outline: 0;
-} 
+}
 #btnBusca {
   border: none;
   float: left;
@@ -48,23 +50,76 @@ textarea:focus, input:focus, select:focus {
   width: 80px;
   font-weight: bold;
   margin-left: auto;
-  background: #1E90FF;
+  background: #1e90ff;
 }
-.list{
+.list {
   display: flex;
   margin-top: 5%;
   justify-content: center;
   margin-left: 50px;
 }
-.content{
+.content {
   width: 100%;
 }
-.border{
-  border: solid 1px #1E90FF;
+.border {
+  border: solid 1px #1e90ff;
   margin: auto 90px;
 }
-.text-fig{
-  font-family: 'Lobster';
+.text-fig {
+  font-family: "Lobster";
   color: black;
   text-align: center;
+}
+
+.btn-return {
+  font-family: "Lobster";
+  padding: 15px;
+  background-color: #1e90ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20%;
+  margin-left: 20px;
+  font-size: 2rem;
+}
+
+.topo {
+  align-items: center;
+  display: flex;
+
+  /* justify-content: center; */
+}
+
+h2 {
+  font-family: "Lobster";
+  text-align: center;
+  color: #1e90ff;
+}
+.title {
+  margin-left: 33%;
+}
+
+.results {
+  margin: 5px 100px 0px 100px;
+  border-style: none solid;
+  border-color: #d3d3d3;
+}
+
+.card {
+  margin: 0px 10px 10px 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #1e90ff;
+  border-radius: 5px;
+}
+
+.card p {
+  padding: 10px;
+}
+
+.error {
+  text-align: center;
+  font-family: ui-rounded;
+  color: red;
+  font-size: x-large;
+  margin-top: 20px;
 }

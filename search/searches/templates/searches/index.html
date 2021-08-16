@@ -23,40 +23,33 @@
     <div class="navbar">
       <h1>SearchZIL</h1>
     </div>
-    <div id="divBusca">
-      <img class="searchImg" src="{% static "images/search.png" %}"
-      alt="Search!" />
-      <input type="text" id="txtBusca" placeholder="Buscar..." />
-      <button id="btnBusca">Buscar</button>
-    </div>
-    <!-- <div class="list">
-      <div class="list">
-        {% for image in urls %}
-        <container class="list-container">
-          <img class="content" src="static/{{image}}" alt="" />
-          {% endfor %}{% for content in title %}
-          <h4 class="text-image">{{ content }}</h4>
-          {% endfor %}
-        </container>
-      </div> -->
+    <form action="/results" method="get">
+      <div id="divBusca">
+        <img class="searchImg" src="{% static "images/search.png" %}"
+        alt="Search!" />
+        <input type="text" id="txtBusca" name="busca" placeholder="Buscar..." />
+        <button type="submit" value="OK" id="btnBusca">Buscar</button>
+      </div>
+    </form>
     <div class="list">
-      <a href=""
+      <a href="/results?busca=carnaval no brasil"
         ><figure class="border">
           <img class="content" src="{% static "images/carnaval.jpg" %}" alt=""
           />
           <figcaption class="text-fig">Carnaval no Brasil</figcaption>
         </figure></a
       >
-      <a href=""
+      <a href="/results?busca=futebol no brasil"
         ><figure class="border">
-          <img class="content" src="{% static "images/futebol.jpeg" %}" alt="" />
-        <figcaption class="text-fig">Futebol no Brasil</figcaption>
+          <img class="content" src="{% static "images/futebol.jpeg" %}" alt=""
+          />
+          <figcaption class="text-fig">Futebol no Brasil</figcaption>
         </figure></a
       >
-      <a href=""
+      <a href="/results?busca=samba no brasil"
         ><figure class="border">
           <img class="content" src="{% static "images/samba.jpg" %}" alt="" />
-        <figcaption class="text-fig">Samba no Brasil</figcaption>
+          <figcaption class="text-fig">Samba no Brasil</figcaption>
         </figure></a
       >
     </div>
